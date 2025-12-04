@@ -34,3 +34,18 @@ const invitati = [
     "maria_antonietta@gmail.com",
     "massimo_decimo_meridio@gmail.com",
 ];
+
+const emailInvitati = prompt("inserisci la tua email");
+
+let inLista = false
+
+for (let i = 0; i < invitati.length; i++) {
+    if (invitati[i] === emailInvitati) {
+        console.log(true);
+    }
+    if (inLista) {
+        console.log("Buongiorno stelle del cielo, la terra vi saluta");
+    } else {
+        console.log("Spiacente, non hai trovato il biglietto");
+    }
+}
