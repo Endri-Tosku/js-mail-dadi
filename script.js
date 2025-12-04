@@ -35,13 +35,15 @@ let inLista = false
 
 for (let i = 0; i < invitati.length; i++) {
     if (invitati[i] === emailInvitati) {
-        console.log(true);
+        // console.log(true);
+        inLista = true
     }
-    if (inLista) {
-        console.log("Buongiorno stelle del cielo, la terra vi saluta");
-    } else {
-        console.log("Spiacente, non hai trovato il biglietto");
-    }
+}
+
+if (inLista) {
+    console.log("Buongiorno stelle del cielo, la terra vi saluta");
+} else {
+    console.log("Spiacente, non hai trovato il biglietto d'oro");
 } */
 
 
@@ -52,12 +54,12 @@ for (let i = 0; i < invitati.length; i++) {
 const userNumber = Number(prompt("Inserisci un numero da 1 a 6"));
 const computerNumber = Math.floor(Math.random() * 6) + 1;
 
-let punteggioUser = userNumber
+/* let punteggioUser = userNumber
 let punteggioComputer = computerNumber
-
-if (punteggioUser > punteggioComputer) {
+ */
+if (userNumber > computerNumber) {
     console.log("hai vinto");
-} else if (punteggioUser < punteggioComputer) {
+} else if (userNumber < computerNumber) {
     console.log("ha vinto il computer");
 } else {
     console.log("hai pareggiato");
